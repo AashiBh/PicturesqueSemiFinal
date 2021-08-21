@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Picturesque</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<body style="font-size:medium; background-image: url(PwettyPic.png);"> 
+    <div class="container">
+    <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="LogLogout()">Logout</button>
+        <center>
+            <h1 class="header" style="font-family: 'Yeon Sung';letter-spacing: 10px;margin-top: 80px;">	
+               Picturesque	
+                <sup>
+                    <img src="InboxIcon.jpg">
+                </sup>
+            </h1>
+            <h3 class="color_white" id="UsaName" style="font-family: 'Yeon Sung';letter-spacing: 10px;margin-top: 80px;"></h3>
+            <div class="form-group input_div_room_page">
+                <label style="color:azure;font-family:  'Yeon Sung';letter-spacing: 10px;margin-top: 80px;">#Add Room:</label>
+    <input id="AddsRoom" placeholder="Add Room Name" class="form-control Kuta" style="font-family: 'Yeon Sung';letter-spacing: 10px;margin-top: 80px;">
+            </div>
+            <button onclick="Roman()" style="font-family: 'Yeon Sung';letter-spacing: 10px;margin-top: 80px; background-color:palevioletred;">#Add Room</button>
+            <h3 class="color_white" style="font-family: 'Yeon Sung'; letter-spacing: 10px;margin-top: 80px;">#TRENDINGROOMS</h3>
+        <div id="FireBase_output">
+    
+        </div>
+        </center>
+    </div>
+</body>
+<script src="picturesque_room.js"></script>
+    </html>
